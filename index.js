@@ -88,6 +88,11 @@ ncp(__dirname + '/templates/index.js', 'index.js', function (err) {
    });
 
    const exec = require("child_process").exec;
+   console.log('Downloading extra packages needed...')
    exec(`npm i --save better-sqlite-pool chalk discord.js enmap express file-system moment moment-duration-format request`, async(error, stdout) => {
+       console.log(stdout)
+       if(error) {
+       console.log(error)
+       }
    })
 };
