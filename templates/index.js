@@ -7,7 +7,12 @@ client.config = require("./config.js");
 require("./modules/functions.js")(client);
 client.commands = new Enmap();
 client.aliases = new Enmap();
-client.settings = new Enmap({name: "settings"});
+client.settings = new Enmap({
+  name: "settings",
+  fetchAll: true,
+  autoFetch: true,
+  cloneLevel: 'deep'
+});
 const init = async () => {
   const cmdFiles = await readdir("./commands/");
   console.log(`Loading a total of ${cmdFiles.length} commands.`);
