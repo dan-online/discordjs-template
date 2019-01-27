@@ -1,0 +1,17 @@
+{
+  "name": "discordjs-template",
+  "version": "2.0.0",
+  "description": "A basic template of a discordjs bot",
+  "license": "MIT",
+  "repository": "MayorChano/discordjs-template",
+  "main": "index.js",
+  "keywords": [
+    "discordjs",
+    "bot",
+    "template",
+    "discord bot"
+  ],
+  "dependencies": {
+    "file-system": "^2.2.2"
+  }
+}
