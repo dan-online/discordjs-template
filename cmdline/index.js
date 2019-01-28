@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const init = async function () {
 const modulee = require('../index.js')
 const readline = require('readline').createInterface({
