@@ -1,6 +1,6 @@
 {
   "name": "discordjs-template",
-  "version": "2.2.1",
+  "version": "2.2.0",
   "description": "A basic template of a discordjs bot",
   "license": "MIT",
   "repository": "MayorChano/discordjs-template",
@@ -11,11 +11,11 @@
     "template",
     "discord bot"
   ],
-  "scripts": {
-    "postinstall": "chmod +x ./cmdline/index.js"
+  "scripts":{
+    "postinstall": "chmod +x ./node_modules/discordjs-template/cmdline/index.js; npm link"
   },
-  "bin": {
-    "discordjs-template": "./cmdline/index.js"
+  "bin":{
+    "discordjs-template": "./node_modules/discordjs-template/cmdline/index.js"
   },
   "dependencies": {
     "file-system": "^2.2.2",
