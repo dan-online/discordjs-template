@@ -1,6 +1,6 @@
 {
   "name": "discordjs-template",
-  "version": "2.1.6",
+  "version": "2.1.7",
   "description": "A basic template of a discordjs bot",
   "license": "MIT",
   "repository": "MayorChano/discordjs-template",
@@ -11,6 +11,9 @@
     "template",
     "discord bot"
   ],
+  "scripts":{
+    "discordjs-template": "node cmdline/index.js"
+  },
   "dependencies": {
     "file-system": "^2.2.2",
     "ncp": "^2.0.0"
