@@ -15,7 +15,7 @@
     "postinstall": "chmod +x ./node_modules/discordjs-template/cmdline/index.js; npm link"
   },
   "bin":{
-    "discordjs-template": "node ./node_modules/discordjs-template/cmdline/index.js"
+    "discordjs-template": "./node_modules/discordjs-template/cmdline/index.js"
   },
   "dependencies": {
     "file-system": "^2.2.2",
