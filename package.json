@@ -11,12 +11,6 @@
     "template",
     "discord bot"
   ],
-  "scripts": {
-    "postinstall": "chmod +x ./cmdline/index.js; npm link"
-  },
-  "bin": {
-    "discordjs-template": "./cmdline/index.js"
-  },
   "dependencies": {
     "file-system": "^2.2.2",
     "ncp": "^2.0.0"
