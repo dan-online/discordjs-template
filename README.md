@@ -10,3 +10,6 @@ run.start(token, name, color, owner, prefix)
 ```
 ## Creation
 This module was created by [MayorChano](https://mayorchano.me) and you can find it [here](https://www.npmjs.com/package/discordjs-template) using a template by An Idiot's Guide
+
+## Support
+[<img style="size: 50%" src="https://c5.patreon.com/external/logo/become_a_patron_button@2x.png">](https://patreon.com/MayorChano/)
