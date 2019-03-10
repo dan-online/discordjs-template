@@ -6,6 +6,19 @@ module.exports.start = function start(token, name, color, owner, prefix, f) {
     if(!color || !color.startsWith('#')) throw new TypeError('A hex color must be provided [#fffff], start(token, name, color, owner, prefix)');
     if(!owner || !parseInt(owner)) throw new TypeError('Your ID must be provided [312551747027468290], start(token, name, color, owner, prefix)');
     if(!prefix) throw new TypeError('A prefix must be provided [l!], start(token, name, color, owner, prefix)');
+    var pack = `
+    {
+      "name": "${name}",
+      "version": "1.0.0",
+      "description": "DiscordJSBot",
+      "license": "MIT",
+      "repository": "MayorChano/discordjs-template",
+      "main": "index.js",
+      "dependencies": {
+      }
+    }
+    
+    `;
     var json = `
 const config = {
         "ownerID": "${owner}",
@@ -61,7 +74,7 @@ const config = {
             }
         ]
     };
-module.exports = config;`
+module.exports = config;`;
 if(f) {
     fs.writeFile("../config.js", json, function (err) {
         if (err) throw err;
@@ -71,7 +84,21 @@ if(f) {
         if (err) throw err;
     });
 }
+if(f) {
+  fs.writeFile("../package.json", pack, function (err) {
+      if (err) throw err;
+  });
+} else {
+  fs.writeFile("package.json", pack, function (err) {
+      if (err) throw err;
+  });
+}
 ncp(__dirname + '/templates/commands/', 'commands/', function (err) {
+    if (err) {
+      throw new Error(err);
+    }
+   });
+   ncp(__dirname + '/templates/modules/', 'modules/', function (err) {
     if (err) {
       throw new Error(err);
     }

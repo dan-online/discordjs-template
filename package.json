@@ -1,6 +1,6 @@
 {
   "name": "discordjs-template",
-  "version": "2.2.8",
+  "version": "2.2.9",
   "description": "A basic template of a discordjs bot",
   "license": "MIT",
   "repository": "MayorChano/discordjs-template",
